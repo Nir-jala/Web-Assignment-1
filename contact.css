@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    color: black;
+}
+
+/* Header & Navigation */
+header {
+    background-color: royalblue;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: white;
+    color: royalblue;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: darkblue;
+}
+
+.contact .intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+}
+
+/* Grid Layout */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid black; /* replace box-shadow with simple border */
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: royalblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid black; /* simple border instead of shadow */
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: darkblue;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    background-color: royalblue;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
