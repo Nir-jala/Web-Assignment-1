@@ -1,0 +1,124 @@
+/* ==============================
+   SITE REPORT STYLESHEET – TEACHER FRIENDLY
+   ============================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid black; /* simple border instead of shadow */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: navy;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+/*navigation bar*/
+nav {
+    background-color: royalblue;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: white;
+    color: royalblue;
+    border-radius: 5px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images (validation screenshots) */
+img {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+    border: 1px solid black;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
